@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/168d4562ab.js" crossorigin="anonymous"></script>
+    <title>mo.dialeo</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <a href="index.html" class="logo">OmoCodes</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Entrepreneur | Theologian | Software Engineer</p>
+                <h1>Hi! I am <span>Omolemo</span><br> Kgosietsile Diale</h1>
+            </div>
+        </div>
+    </div>
+<!----------------------------------About----------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+            <img src="images/">
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A theologian that writes codes! While studying, I have grown passionate about the 4IR and the rapidly changing world we live in. My passion remains in the investigation of the potential of the intersection of theology and technology. I aspire to utilize both fields to benefit the Kingdom of God, especially in Africa. My focus is on creating a positive influence in the world through web and applications development.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Intern: Joburg Centre of Software Engineering</li>
+                        <li><span>2023</span><br>Administrative Assistant: University of Pretoria</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Diploma in Theology: University of Pretoria</li>
+                        <li><span>2023</span><br>Fullstack Web Development Certification: freeCodeCamp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------Projects----------------------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>A personal poortfolio showcasing my skills, education, and contacts.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Microsoft Dynamics 365 CRN</h3>
+                    <p>Created a Microsoft Dynamics 365 CRM project specifically designed for a hospital. The project aims to streamline patient management, enhance communication between healthcare professionals, and improve overall operational efficiency. By leveraging the powerful capabilities of Dynamics 365 CRM, the hospital can expect to achieve better patient care, optimized resource allocation, and seamless collaboration across departments.</p>
+                    <a href="projects/MrOKDiale Dynamics365Project.pdf"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis impedit labore eos fuga, animi hic nobis error iste tempora totam natus expedita, ipsa debitis corporis culpa ratione blanditiis architecto libero.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------------------------Contact----------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> omodiale.codes@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0782413318</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mo.dialeo/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/omolemo-diale/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=0782413318"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <a href="resume/MrOKDiale CV(2023).doc" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Omolemo. Made by omocodes <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxX37mSVE3yt51pHZ_cG_1tzbKynKCpnVmSejxdzWsj3aBF9TFeb41vF4v968Gx2e1QDw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
